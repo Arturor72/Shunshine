@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <SwitchPreference
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="@string/pref_description_social_recommendations"
+        android:title="@string/pref_title_social_recommendations" />-->
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:title="@string/pref_localtion_label"
+        android:key="@string/pref_localtion_key"
+        android:defaultValue="@string/pref_localtion_default"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+    <ListPreference
+        android:key="@string/pref_unit_key"
+        android:title="@string/pref_unit_label"
+        android:entries="@array/pref_list_units_labels"
+        android:entryValues="@array/pref_list_units_values"
+        android:defaultValue="@string/pref_unit_metric_value" />
+</PreferenceScreen>
